@@ -18,25 +18,25 @@ const currentYear = new Date().getFullYear();
 			<p class="text-sm text-garage-gold-muted tracking-widest uppercase">— Rhodes —</p>
 		</div>
 		<nav
-			class="flex flex-col sm:flex-row items-center justify-center gap-x-10 gap-y-3 text-sm font-medium mt-8 uppercase tracking-wide"
+			class="flex flex-col sm:flex-row items-center justify-center gap-x-10 gap-y-3 text-base sm:text-sm font-bold sm:font-medium mt-8 uppercase tracking-wide"
 			aria-label="Footer"
 		>
 			{
 				menuMain.map((item) => (
-					<a href={item.url} class="text-garage-gold-bright/90 hover:text-garage-gold-bright transition-colors">
+					<a href={item.url} class="text-white sm:text-garage-gold-bright/90 hover:text-garage-gold-bright transition-colors">
 						{item.name}
 					</a>
 				))
 			}
 		</nav>
-		<p class="mt-8 text-center text-xs text-garage-gold-muted/80">
+		<p class="mt-8 text-center text-sm sm:text-xs font-bold sm:font-normal text-white sm:text-garage-gold-muted/80">
 			© {currentYear} {siteName}. Coffee and more.
 		</p>
-		<p class="mt-3 text-center text-xs text-garage-gold-muted/60">
-			Explore Rhodes with <a href="https://rhodessidecartours.com/" rel="dofollow" class="text-garage-gold-muted/80 hover:text-garage-gold-bright transition-colors">Rhodes Sidecar</a>
+		<p class="mt-3 text-center text-sm sm:text-xs font-bold sm:font-normal text-white/80 sm:text-garage-gold-muted/60">
+			Explore Rhodes with <a href="https://rhodessidecartours.com/" rel="dofollow" class="text-white sm:text-garage-gold-muted/80 hover:text-garage-gold-bright transition-colors font-bold">Rhodes Sidecar</a>
 		</p>
-		<p class="mt-3 text-center text-xs text-garage-gold-muted/60">
-			Developed by <a href="https://itdev.gr" rel="dofollow" class="text-garage-gold-muted/80 hover:text-garage-gold-bright transition-colors">IT DEV</a>
+		<p class="mt-3 text-center text-sm sm:text-xs font-bold sm:font-normal text-white/80 sm:text-garage-gold-muted/60">
+			Developed by <a href="https://itdev.gr" rel="dofollow" class="text-white sm:text-garage-gold-muted/80 hover:text-garage-gold-bright transition-colors font-bold">IT DEV</a>
 		</p>
 	</div>
 </footer>

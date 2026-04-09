@@ -18,7 +18,7 @@ const siteOrigin = Astro.site?.origin ?? Astro.url.origin;
 	<Section
 		contain={false}
 		data-home-hero
-		class:list={"relative min-h-[100dvh] h-[100dvh] w-full overflow-hidden"}
+		class:list={"relative min-h-[100dvh] sm:h-[100dvh] w-full overflow-hidden"}
 	>
 		<div class="absolute inset-0" aria-hidden="true">
 			<img
@@ -40,7 +40,7 @@ const siteOrigin = Astro.site?.origin ?? Astro.url.origin;
 		>
 		</div>
 		<div
-			class="relative z-10 flex min-h-[100dvh] h-full flex-col justify-center px-4 pb-24 pt-[calc(var(--site-header-h)+0.5rem)] sm:pb-12 sm:px-6 lg:px-8"
+			class="relative z-10 flex min-h-[100dvh] sm:h-full flex-col justify-center px-4 pb-24 pt-[calc(var(--site-header-h)+2rem)] sm:pb-12 sm:pt-[calc(var(--site-header-h)+0.5rem)] sm:px-6 lg:px-8"
 		>
 			<div class="container mx-auto max-w-3xl text-center">
 				<p data-home-hero-animate class="font-garage text-sm tracking-[0.35em] text-garage-gold-muted uppercase mb-4">
