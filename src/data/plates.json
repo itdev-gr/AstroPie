@@ -55,7 +55,7 @@
 	{
 		"id": "other-drinks",
 		"slug": "other-drinks",
-		"prettyName": "Other drinks",
+		"prettyName": "Drinks",
 		"description": "Chocolate, juices, soft drinks, beer, and more.",
 		"plates": [
 			{
@@ -113,7 +113,7 @@
 	{
 		"id": "food",
 		"slug": "food",
-		"prettyName": "Food",
+		"prettyName": "Bites",
 		"description": "Pastries, toast, and sandwiches.",
 		"plates": [
 			{

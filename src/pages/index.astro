@@ -72,7 +72,7 @@ const siteOrigin = Astro.site?.origin ?? Astro.url.origin;
 					>
 						<p class="font-garage text-3xl sm:text-4xl text-garage-gold-bright tabular-nums">Only €4.80</p>
 						<p class="mt-2 text-garage-gold-bright/95 font-medium">
-							Coffee &amp; your choice of <span class="text-garage-gold">baguette</span>
+							Coffee of your choice and <span class="text-garage-gold">Baguette</span>
 						</p>
 						<p class="mt-3 text-sm text-garage-gold-muted leading-relaxed">
 							With butter, smoked turkey, cheese, tomato, and cucumber.
@@ -105,6 +105,22 @@ const siteOrigin = Astro.site?.origin ?? Astro.url.origin;
 					</svg>
 				</span>
 			</div>
+		</div>
+	</Section>
+
+	<!-- Video section -->
+	<Section contain={false} class="relative w-full overflow-hidden bg-garage-black">
+		<div class="w-full">
+			<video
+				class="w-full h-auto block"
+				autoplay
+				muted
+				loop
+				playsinline
+				preload="metadata"
+			>
+				<source src="/videos/rhodes-sidecar.mp4" type="video/mp4" />
+			</video>
 		</div>
 	</Section>
 
