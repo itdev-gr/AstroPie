@@ -1,0 +1,39 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import { seo404 } from "~/data/seo";
+---
+
+<Layout
+	title={seo404.ogTitle}
+	pageTitle={seo404.pageTitle}
+	description={seo404.description}
+	robots={seo404.robots}
+>
+	<Section class:list={"garage-section min-h-[60vh] flex items-center"}>
+		<div class="min-h-full mx-auto w-full max-w-2xl text-center">
+			<p class="font-garage text-8xl text-garage-gold/40 tabular-nums">404</p>
+			<h1 class="mt-6 text-3xl font-garage text-garage-gold-bright lg:text-4xl uppercase tracking-wide">
+				Page not found
+			</h1>
+			<p class="mt-4 text-garage-gold-muted">Check the URL or return to the home page.</p>
+			<div class="mt-12">
+				<a href="/" class="button button-green inline-flex items-center gap-2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+						class="size-5"
+						aria-hidden="true"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+							clip-rule="evenodd"></path>
+					</svg>
+					Home
+				</a>
+			</div>
+		</div>
+	</Section>
+</Layout>

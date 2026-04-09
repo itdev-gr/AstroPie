@@ -1,0 +1,136 @@
+[
+	{
+		"id": "coffees",
+		"slug": "coffees",
+		"prettyName": "Coffees",
+		"description": "Espresso, freddo, frappe, and Greek coffee at Garage Cafe, Rhodes.",
+		"plates": [
+			{
+				"name": "Freddo Espresso",
+				"description": "",
+				"price": 2.0
+			},
+			{
+				"name": "Freddo Cappuccino",
+				"description": "",
+				"price": 2.2
+			},
+			{
+				"name": "Frappe Coffee | Nescafé",
+				"description": "",
+				"price": 1.8
+			},
+			{
+				"name": "Espresso single",
+				"description": "",
+				"price": 1.8
+			},
+			{
+				"name": "Espresso double",
+				"description": "",
+				"price": 2.0
+			},
+			{
+				"name": "Cappuccino single",
+				"description": "",
+				"price": 2.0
+			},
+			{
+				"name": "Cappuccino double",
+				"description": "",
+				"price": 2.2
+			},
+			{
+				"name": "Greek coffee single",
+				"description": "Traditional Greek coffee",
+				"price": 1.7
+			},
+			{
+				"name": "Greek coffee double",
+				"description": "Traditional Greek coffee",
+				"price": 2.1
+			}
+		]
+	},
+	{
+		"id": "other-drinks",
+		"slug": "other-drinks",
+		"prettyName": "Other drinks",
+		"description": "Chocolate, juices, soft drinks, beer, and more.",
+		"plates": [
+			{
+				"name": "Hot / cold chocolate",
+				"description": "",
+				"price": 3.0
+			},
+			{
+				"name": "Fresh orange juice",
+				"description": "",
+				"price": 3.0
+			},
+			{
+				"name": "Soft drinks",
+				"description": "",
+				"price": 1.5
+			},
+			{
+				"name": "Red Bull",
+				"description": "",
+				"price": 2.0
+			},
+			{
+				"name": "Monster",
+				"description": "",
+				"price": 2.2
+			},
+			{
+				"name": "Beer 330 ml",
+				"description": "",
+				"price": 1.5
+			},
+			{
+				"name": "Beer 500 ml",
+				"description": "",
+				"price": 2.0
+			},
+			{
+				"name": "Small water 500 ml",
+				"description": "",
+				"price": 0.5
+			},
+			{
+				"name": "Large water 1.5 L",
+				"description": "",
+				"price": 1.0
+			},
+			{
+				"name": "Alcoholic drinks",
+				"description": "",
+				"price": 6.0
+			}
+		]
+	},
+	{
+		"id": "food",
+		"slug": "food",
+		"prettyName": "Food",
+		"description": "Pastries, toast, and sandwiches.",
+		"plates": [
+			{
+				"name": "Pastries (sfolia)",
+				"description": "Flaky pastries",
+				"price": 2.3
+			},
+			{
+				"name": "Toast with chips",
+				"description": "",
+				"price": 2.9
+			},
+			{
+				"name": "Sandwiches",
+				"description": "",
+				"price": 3.3
+			}
+		]
+	}
+]

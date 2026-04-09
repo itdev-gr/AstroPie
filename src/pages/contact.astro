@@ -1,0 +1,73 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Heading from "~/components/Heading.astro";
+import Button from "~/components/Button.astro";
+import { phone, address, mapsUrl, mapsEmbedSrc, mapsReviewsUrl, deliveryHours } from "~/data/config";
+import { seoContact } from "~/data/seo";
+---
+
+<Layout title={seoContact.ogTitle} pageTitle={seoContact.pageTitle} description={seoContact.description}>
+	<Section class:list={"garage-section"}>
+		<Heading>
+			<h2 slot="heading-title" class="font-garage h2 text-garage-gold-bright !font-semibold uppercase tracking-wide">
+				Contact
+			</h2>
+			<p slot="heading-content" class="text-garage-gold-muted">Find us in Rhodes or call to order.</p>
+		</Heading>
+
+		<div class="max-w-3xl mx-auto w-full space-y-6 mb-12">
+			<div
+				class="relative overflow-hidden rounded-2xl border border-garage-gold/25 bg-garage-panel/30 shadow-[inset_0_1px_0_rgba(212,175,55,0.06)] aspect-[4/3] min-h-[240px] sm:min-h-[320px] sm:aspect-video"
+			>
+				<iframe
+					title="Garage Coffee Rhodes on Google Maps"
+					src={mapsEmbedSrc}
+					class="absolute inset-0 size-full border-0"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+					allowfullscreen
+				/>
+			</div>
+			<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
+				<Button url={mapsReviewsUrl} newtab>
+					Google reviews
+				</Button>
+			</div>
+		</div>
+
+		<div class="max-w-xl mx-auto space-y-10 text-center">
+			<div class="p-8 border border-garage-gold/25 rounded-2xl bg-garage-panel/50">
+				<h3 class="font-garage text-sm tracking-[0.25em] text-garage-gold-muted uppercase mb-4">Address</h3>
+				<p class="text-xl text-garage-gold-bright font-medium">{address.street}</p>
+				<p class="mt-1 text-garage-gold-muted">{address.city}, {address.country}</p>
+				<a
+					href={mapsUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-flex items-center gap-2 mt-6 text-garage-gold hover:text-garage-gold-bright text-sm font-medium uppercase tracking-wide"
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5" aria-hidden="true">
+						<path
+							fill-rule="evenodd"
+							d="M9.69 18.933a.75.75 0 0 0 1.38 0l2.27-5.052a2.25 2.25 0 0 1 1.131-1.131l5.051-2.27a.75.75 0 0 0 0-1.382l-5.052-2.27a2.25 2.25 0 0 1-1.131-1.131L9.69 1.027a.75.75 0 0 0-1.38 0l-2.27 5.052a2.25 2.25 0 0 1-1.131 1.131l-5.051 2.27a.75.75 0 0 0 0 1.382l5.052 2.27a2.25 2.25 0 0 1 1.131 1.131l2.27 5.051Z"
+							clip-rule="evenodd"></path>
+					</svg>
+					Google Maps
+				</a>
+			</div>
+
+			<div>
+				<h3 class="font-garage text-sm tracking-[0.25em] text-garage-gold-muted uppercase mb-4">Phone</h3>
+				<a href={phone.href} class="text-2xl sm:text-3xl font-garage text-garage-gold-bright hover:text-garage-gold transition-colors">
+					{phone.label}
+				</a>
+			</div>
+
+			<div class="p-6 border border-garage-gold/20 rounded-xl bg-garage-black/40">
+				<h3 class="font-garage text-sm tracking-[0.25em] text-garage-gold-muted uppercase mb-2">Delivery</h3>
+				<p class="text-lg text-[#e8dcc4]">{deliveryHours}</p>
+			</div>
+		</div>
+	</Section>
+</Layout>

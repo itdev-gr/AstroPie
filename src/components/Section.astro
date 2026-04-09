@@ -1,0 +1,9 @@
+---
+const { id, class: className, contain = true, innerClass = "", ...sectionAttrs } = Astro.props;
+---
+
+<section id={id} class={className} {...sectionAttrs}>
+	<div class:list={[contain && "container py-16 lg:py-32", innerClass]}>
+		<slot />
+	</div>
+</section>

@@ -1,0 +1,36 @@
+---
+import { menuMain } from "~/data/menus";
+import { siteName } from "~/data/config";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-garage-gold/25 bg-garage-panel text-[#e8dcc4]">
+	<div class="container pt-14 pb-10">
+		<div class="flex flex-col items-center gap-5">
+			<img
+				src="/images/garage/logo.png"
+				alt="Garage Cafe Rhodes — Coffee and more"
+				width="160"
+				height="160"
+				class="rounded-full ring-1 ring-garage-gold/35 size-32 sm:size-40 object-cover"
+			/>
+			<p class="text-sm text-garage-gold-muted tracking-widest uppercase">— Rhodes —</p>
+		</div>
+		<nav
+			class="flex flex-col sm:flex-row items-center justify-center gap-x-10 gap-y-3 text-sm font-medium mt-8 uppercase tracking-wide"
+			aria-label="Footer"
+		>
+			{
+				menuMain.map((item) => (
+					<a href={item.url} class="text-garage-gold-bright/90 hover:text-garage-gold-bright transition-colors">
+						{item.name}
+					</a>
+				))
+			}
+		</nav>
+		<p class="mt-8 text-center text-xs text-garage-gold-muted/80">
+			© {currentYear} {siteName}. Coffee and more.
+		</p>
+	</div>
+</footer>
